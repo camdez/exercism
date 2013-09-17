@@ -1,4 +1,5 @@
 (ns dna
+  (:refer-clojure :exclude [count])
   (:require [clojure.set :as set]))
 
 (def dna-nucleotides #{\A \C \G \T})
