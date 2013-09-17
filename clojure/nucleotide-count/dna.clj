@@ -11,7 +11,7 @@
           (zipmap dna/dna-nucleotides (repeat 0))
           dna-str))
 
-(defn count [base dna-str]
-  (if (valid-nucleotides base)
-    (get (nucleotide-counts dna-str) base 0)
+(defn count [nuc dna-str]
+  (if (valid-nucleotides nuc)
+    (get (nucleotide-counts dna-str) nuc 0)
     (throw (Exception. "invalid nucleotide"))))
